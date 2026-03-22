@@ -2,6 +2,30 @@ import os
 import sys
 import asyncio
 import shutil
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+# --- DUMMY HEALTH CHECK SERVER ---
+class HealthCheckHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"OK")
+    def log_message(self, format, *args):
+        return # Silence logging
+
+def run_health_check_server():
+    port = int(os.environ.get("PORT", 8000))
+    try:
+        server = HTTPServer(('0.0.0.0', port), HealthCheckHandler)
+        print(f"--- DEBUG: Health Check Server started on port {port} ---")
+        server.serve_forever()
+    except Exception as e:
+        print(f"--- DEBUG: Health Check Server failed: {e} ---")
+
+# Start health check server in a background thread
+threading.Thread(target=run_health_check_server, daemon=True).start()
 
 print("\n--- DEBUG: main.py started ---")
 print(f"--- DEBUG: Current Directory: {os.getcwd()}")
