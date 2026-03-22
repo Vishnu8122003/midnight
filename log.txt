@@ -1,0 +1,168 @@
+[20-Mar-26 21:37:26 - INFO] - anony: Cache directories updated.
+[20-Mar-26 21:37:28 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 10:27:16 - INFO] - anony: Cache directories updated.
+[21-Mar-26 10:27:18 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:29:38 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:29:38 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:29:48 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:29:48 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:31:17 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:31:17 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:31:18 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:31:18 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:31:41 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:31:41 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:31:42 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:31:42 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:31:43 - WARNING] - anony: Bot has failed to access the log group: -1003852000730
+Reason: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:31:43 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:32:02 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:32:02 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:32:03 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:32:03 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:32:04 - WARNING] - anony: Bot has failed to access the log group: -1003852000730
+Reason: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:32:04 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:32:05 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:32:05 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:32:05 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:32:06 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:32:06 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:33:10 - ERROR] - pyrogram.dispatcher: Unexpected exception raised in MessageHandler:
+Traceback (most recent call last):
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 67, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 363, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003852000730'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\dispatcher.py", line 383, in handler_worker
+    await handler.callback(self.client, *args)
+  File "D:\New folder\AnonXMusic\anony\core\lang.py", line 90, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\anony\plugins\start.py", line 49, in start
+    await utils.send_log(message)
+  File "D:\New folder\AnonXMusic\anony\helpers\_utilities.py", line 122, in send_log
+    await app.send_message(
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 267, in send_message
+    peer = await self.resolve_peer(chat_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 91, in resolve_peer
+    await self.invoke(
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 107, in invoke
+    r = await session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\session\session.py", line 551, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\session\session.py", line 514, in send
+    RPCError.raise_it(result, type(data))
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:35:50 - WARNING] - anony: Cookies are missing; downloads might fail.
+[21-Mar-26 17:43:34 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:43:34 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:43:35 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:43:35 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:44:10 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:44:10 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:44:10 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:44:10 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:44:11 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 17:44:11 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:44:12 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:44:12 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:44:12 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:44:12 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:44:12 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:45:08 - ERROR] - pyrogram.dispatcher: DynamicFilter.__call__() missing 1 required positional argument: 'update'
+Traceback (most recent call last):
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\dispatcher.py", line 364, in handler_worker
+    if await handler.check(self.client, parsed_update):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\handlers\handler.py", line 35, in check
+    return await self.filters(client, update)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\filters.py", line 88, in __call__
+    y = await self.other(client, update)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder\AnonXMusic\venv\Lib\site-packages\pyrogram\filters.py", line 57, in __call__
+    x = await self.base(client, update)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DynamicFilter.__call__() missing 1 required positional argument: 'update'
+[21-Mar-26 17:46:14 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:46:14 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:46:15 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:46:15 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:46:16 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 17:46:16 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:46:17 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:46:17 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:46:17 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:46:17 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:46:17 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:47:15 - WARNING] - anony: Cookies are missing; downloads might fail.
+[21-Mar-26 17:49:10 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:49:10 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:49:11 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:49:11 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:49:12 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 17:49:12 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:49:12 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:49:13 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:49:13 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:49:13 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:49:13 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:50:01 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:50:02 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:50:02 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:50:02 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:50:03 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 17:50:03 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:50:04 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:50:04 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:50:04 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:50:04 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:50:04 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:51:29 - WARNING] - anony: Cookies are missing; downloads might fail.
+[21-Mar-26 17:55:32 - INFO] - anony: Cache directories updated.
+[21-Mar-26 17:55:32 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 17:55:33 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 17:55:33 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 17:55:34 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 17:55:34 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 17:55:35 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 17:55:35 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 17:55:35 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 17:55:35 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 17:55:35 - INFO] - anony: Loaded 1 sudo users.
+[21-Mar-26 17:58:31 - WARNING] - anony: Cookies are missing; downloads might fail.
+[21-Mar-26 18:35:33 - INFO] - anony: Cache directories updated.
+[21-Mar-26 18:35:33 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[21-Mar-26 18:35:34 - INFO] - anony: Local JSON storage initialized.
+[21-Mar-26 18:35:34 - INFO] - anony: Local database cache loaded.
+[21-Mar-26 18:35:35 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[21-Mar-26 18:35:35 - INFO] - anony: Bot started as @midnight_societybot
+[21-Mar-26 18:35:36 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[21-Mar-26 18:35:36 - INFO] - anony: Assistant 1 started as @None
+[21-Mar-26 18:35:36 - INFO] - anony: PyTgCalls client(s) started.
+[21-Mar-26 18:35:36 - INFO] - anony: Loaded 22 modules.
+[21-Mar-26 18:35:36 - INFO] - anony: Loaded 1 sudo users.
+[22-Mar-26 17:26:47 - INFO] - anony: Cache directories updated.
+[22-Mar-26 17:26:47 - INFO] - anony: Loaded languages: ar, de, en, es, fr, hi, ja, my, pa, pt, ru, tr, zh
+[22-Mar-26 17:26:51 - INFO] - anony: Local JSON storage initialized.
+[22-Mar-26 17:26:51 - INFO] - anony: Local database cache loaded.
+[22-Mar-26 17:26:52 - WARNING] - anony: Bot is not an admin in logger group. Logging might be limited.
+[22-Mar-26 17:26:52 - INFO] - anony: Bot started as @midnight_societybot
+[22-Mar-26 17:26:53 - WARNING] - anony: Assistant 1 failed to send message in log group: Telegram says: [400 CHANNEL_INVALID] - The provided channel is invalid. (caused by "channels.GetChannels")
+[22-Mar-26 17:26:53 - INFO] - anony: Assistant 1 started as @None
+[22-Mar-26 17:26:53 - INFO] - anony: PyTgCalls client(s) started.
+[22-Mar-26 17:26:53 - INFO] - anony: Loaded 22 modules.
+[22-Mar-26 17:26:53 - INFO] - anony: Loaded 1 sudo users.
